@@ -1,0 +1,7 @@
+apply plugin: 'kotlin-platform-jvm'
+
+dependencies {
+	expectedBy rootProject
+	compile 'org.jetbrains.kotlin:kotlin-stdlib'
+	compile 'org.example:multiplatform-lib-jvm:0.0.1'
+}

@@ -1,0 +1,7 @@
+apply plugin: 'kotlin-platform-js'
+
+dependencies {
+	expectedBy rootProject
+	compile 'org.jetbrains.kotlin:kotlin-stdlib-js'
+	compile 'org.example:multiplatform-lib-js:0.0.1'
+}

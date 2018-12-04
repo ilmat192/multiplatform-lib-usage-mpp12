@@ -1,0 +1,22 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.10'
+	}
+}
+
+allprojects { 
+	repositories {
+		jcenter()
+		maven { url 'https://dl.bintray.com/orangy/maven' }
+	}
+}
+
+apply plugin: 'kotlin-platform-common'
+
+dependencies {
+	compile 'org.jetbrains.kotlin:kotlin-stdlib-common'
+	compile 'org.example:multiplatform-lib-metadata:0.0.1'
+}
