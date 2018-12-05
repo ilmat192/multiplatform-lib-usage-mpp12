@@ -1,1 +1,1 @@
-include 'jvm', 'js'
+include 'jvm', 'js', 'macos'

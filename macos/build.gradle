@@ -1,0 +1,12 @@
+apply plugin: 'org.jetbrains.kotlin.platform.native'
+
+// Native component
+components.main {
+    targets = ['macos_x64']
+    outputKinds = [EXECUTABLE, KLIBRARY]
+}
+
+dependencies {
+    expectedBy rootProject
+    implementation 'org.example:multiplatform-lib-native:0.0.1'
+}
